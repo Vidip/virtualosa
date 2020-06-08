@@ -16,5 +16,5 @@ API to get command output: /postcommand/<Command>
  
 Screenshots:
 
-![Single Trace] (tracegraph.png)
+![Single Trace](tracegraph.png)
 
