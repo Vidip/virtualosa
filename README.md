@@ -13,3 +13,8 @@ Steps to Run the Project
 API to get command output: /postcommand/<Command>
   
   For Example: https://flaskosanalyzer.herokuapp.com/postcommand/IDN
+ 
+Screenshots:
+
+![Single Trace]graphsingle.png)
+
