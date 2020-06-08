@@ -1,7 +1,7 @@
 # virtualosa
 Virtual Cloud Optical Spectrum Analyzer
 
-Technologies Used: Python (Flask), Javascript, Jquery, Canvas Js
+Technologies Used: Python (Flask), Javascript, Jquery, Canvas Js, HTML, CSS.
 
 Steps to Run the Project
 
