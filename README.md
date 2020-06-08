@@ -1,6 +1,8 @@
 # virtualosa
 Virtual Cloud Optical Spectrum Analyzer
 
+Production Url: http://flaskosanalyzer.herokuapp.com/
+
 Technologies Used: Python (Flask), Javascript, Jquery, Canvas Js, HTML, CSS.
 
 Steps to Run the Project
