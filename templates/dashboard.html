@@ -1,0 +1,59 @@
+{% extends 'index.html' %}
+{% block body %}
+<p id="author_heading">Built by Vidip</p>
+<div class="container" style="margin-top: 5%;">
+	<div class="row">
+    <div class="col" style="overflow-x: scroll;" id="graph">
+      <div id="newdiv">
+        <h4>OSA Graph</h4>
+        <div class="loader"></div>
+        <p></p>
+        <div id="chartContainer"></div>
+        <div id="chartContainer2"></div>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      </div>
+    </div>
+    <div class="col-md-auto">
+     <button type="button" class="btn btn-success" id="start" style="width:140px;">Start</button>
+     <br><br>
+     <button type="button" class="btn btn-danger" id="stop" style="width:140px;">Stop</button>
+     <br><br>
+     <button type="button" class="btn btn-primary" id="single" style="width:140px;">Single</button>
+     <br><br>
+     <button type="button" class="btn btn-danger" id="reset" style="width:140px;" onClick="window.location.reload();">Reset</button>
+    </div>
+  </div>
+  <br>
+  <div id="datavalues">
+    <h5 style="text-align: center;">Data</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Dbm (Y axis)</th>
+          <th scope="col">THz (X axis)</th>
+        </tr>
+      </thead>
+      <tbody id="dv">
+      </tbody>
+      </table>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col">
+      <form id="myForm" style="text-align: center;">
+        <input type="text" id="text" name="text" class="form-control form-control-lg" type="text" placeholder="Enter your command">
+        <br>
+        <button type="button" class="btn btn-danger" id="addminmax" style="width:130px;">Change Limits</button>
+        <br><br>
+      	<input type="submit" value="Submit" class="btn btn-primary" style="width:200px;">
+      </form>
+      <h6>Output:</h6>
+      <p id="output"></p>
+    </div>
+    <div class="col" style="border-style: groove;">
+     <h5>Command Logs</h5>
+     <div class="logs">{% for i in dat.listofcommands %}<p>{{i}}</p>{% endfor %}</div>
+    </div>
+  </div>
+</div>
+{% endblock %}
