@@ -56,15 +56,25 @@ Blueprints are made for posting commands and getting output in command.py
 
 Command	Description
 /cmd	returns command prompt
+
 /cmd/IDN	returns device identification string
+
 /cmd/LIM	returns x-axis limits in m
+
 /cmd/LIM/[min max]	sets x-axis limits in nm
+
 /cmd/ECHO/string	Emulates query command and sends a string to API, will get the same string back
+
 /cmd/PING	Returns PONG
+
 /cmd/START	sets instrument state to continues acquisition
+
 /cmd/STOP	sets instrument state to IDLE
+
 /cmd/SINGLE	starts a single scan (blocking operation, single scan takes few seconds)
+
 /cmd/STATE	returns instrument state
+
 /cmd/TRACE	returns OSA trace in json format
 
 
