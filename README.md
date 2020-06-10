@@ -18,3 +18,8 @@ Screenshots:
 
 ![Single Trace](tracegraph.png)
 
+Echo Example: In Command Box just input ECHO 'any string'
+
+Example: ECHO hello world
+
+
