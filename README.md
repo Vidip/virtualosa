@@ -12,6 +12,8 @@ Steps to Run the Project
 1. pip3 install -r requirements.txt (This will install all the required packages)
 2. python3 app.py
 
+You can open http://127.0.0.1:5000/ to open the page.
+
 API to get command output: /postcommand/<Command>
   
   For Example: https://flaskosanalyzer.herokuapp.com/postcommand/IDN
@@ -27,5 +29,22 @@ Example: ECHO hello world
 On Click of Start Button, it refreshes the data every second.
 
 ![Start](on_start.png)
+
+Features
+
+1. START button will start the acquisition rate and will refresh after every 1 second as it has 1Hz of refresh rate.
+2. STOP button will stop the acquisition and graph rendering will stop.
+3. SINGLE retrieves a single trace and graph will be displayed.
+4. User can call the above mentioned apis to send different commands as required.
+5. Input field is given where can command can entern commands as given in the problem statement. Example mentioned above. 
+6. User can also change the limits if required, Change Limit button will auto enable whenever LIM is typed.
+
+User can give max and min limits in the input type.
+
+Extra Functionalities:
+
+1. User can zoom in, out, pan the plot, undo the graph.
+2. Values can be read off the graph in the table as well.
+
 
 
