@@ -35,7 +35,7 @@ Features
 1. START button will start the acquisition rate and will refresh after every 1 second as it has 1Hz of refresh rate.
 2. STOP button will stop the acquisition and graph rendering will stop.
 3. SINGLE retrieves a single trace and graph will be displayed.
-4. User can call the above mentioned apis to send different commands as required.
+4. User can call the above mentioned apis to send different commands as required. (using url/postcommand/IDN)
 5. Input field is given where can command can entern commands as given in the problem statement. Example mentioned above. 
 6. User can also change the limits if required, Change Limit button will auto enable whenever LIM is typed.
 
@@ -45,6 +45,10 @@ Extra Functionalities:
 
 1. User can zoom in, out, pan the plot, undo the graph.
 2. Values can be read off the graph in the table as well.
+3. Deployed app to Heroku
+4. Provides plot persistence
+
+All the graph populating and other element interaction event logiv is in index.js
 
 
 
