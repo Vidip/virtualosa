@@ -20,13 +20,15 @@ API to get command output: /postcommand/<Command>
  
 Screenshots:
 
+When Clicked on Single Button
+
 ![Single Trace](tracegraph.png)
 
 Echo Example: In Command Box just input ECHO 'any string'
 
 Example: ECHO hello world
 
-On Click of Start Button, it refreshes the data every second.
+On Click of Start Button, it refreshes the data every second. Following is the screenshot of when clicked on single.
 
 ![Start](on_start.png)
 
@@ -48,7 +50,21 @@ Extra Functionalities:
 3. Deployed app to Heroku
 4. Provides plot persistence
 
-All the graph populating and other element interaction event logiv is in index.js
+All the graph populating and other element interaction event logic is in index.js
+Backend logis is in app.py
+Blueprints are made for posting commands and getting output in command.py
 
+Command	Description
+/cmd	returns command prompt
+/cmd/IDN	returns device identification string
+/cmd/LIM	returns x-axis limits in m
+/cmd/LIM/[min max]	sets x-axis limits in nm
+/cmd/ECHO/string	Emulates query command and sends a string to API, will get the same string back
+/cmd/PING	Returns PONG
+/cmd/START	sets instrument state to continues acquisition
+/cmd/STOP	sets instrument state to IDLE
+/cmd/SINGLE	starts a single scan (blocking operation, single scan takes few seconds)
+/cmd/STATE	returns instrument state
+/cmd/TRACE	returns OSA trace in json format
 
 
