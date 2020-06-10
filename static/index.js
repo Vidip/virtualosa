@@ -65,7 +65,7 @@ $(document).ready(function() {
       data: cdata
     });
     $('#stop').prop('disabled', true);
-    $('#reset').prop('disabled', true);
+  //  $('#reset').prop('disabled', true);
 
       //click function when clicked on start button
     $("#start").click(function(){
