@@ -131,7 +131,7 @@ $(document).ready(function() {
     //function called when clicked on stop button
     $("#stop").click(function(){
       $('#single').prop('disabled', true);
-      $('#start').prop('disabled', false);
+      $('#start').prop('disabled', true);
       $('#stop').prop('disabled', true);
       $('#reset').prop('disabled', false);
     });
